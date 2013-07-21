@@ -1,5 +1,4 @@
-
-# Hello. These are the files for CVJ 341 Web Design at the University of Miami
+# CVJ 341 Web Design at the University of Miami
 ======
 
 Authors: 
