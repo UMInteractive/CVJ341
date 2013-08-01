@@ -1,0 +1,47 @@
+/* ==========================================================================
+   Instert your CSS below this line
+   ========================================================================== */
+
+
+
+/* vertical list */
+
+#vert {
+	/*remove padding */
+	padding-left: 0;
+	/*remove list style (dots)*/
+	list-style: none;
+}
+#vert li {
+	/*set a background color*/
+	background-color: #ffcc00;
+	/* set width*/
+	width: 200px;
+	/*set padding*/
+	padding-left: 10px;
+	/*add top border*/
+	border-top: 1px solid #fff;
+}
+
+/* horizontal list */
+
+
+#horiz {
+	/*remove padding */
+	padding-left: 0;
+	/*remove list style (dots)*/
+	list-style: none;
+}
+
+#horiz li {
+	/*set a background color*/
+	background-color: #ffcc00;
+	/* set width*/
+	width: 200px;
+	/*set padding*/
+	padding-left: 10px;
+	/*add right border*/
+	border-right: 1px solid #fff;
+	/*make horizontal*/
+	float: left;
+}
