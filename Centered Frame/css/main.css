@@ -1,0 +1,21 @@
+/* ==========================================================================
+   Instert your CSS below this line
+   ========================================================================== */
+
+#frame {
+	position: absolute;
+	background-color: #ffcc00;
+	/*set width*/
+	width: 1000px;
+	/*set height*/
+	height: 600px;
+	/*set distance from top*/
+	top: 50%;
+	/* set distance from left */
+	left: 50%;
+	/*offset top 1/2 of height*/
+	margin-top: -300px;
+	/*offset left 1/2 of width */
+	margin-left: -500px;
+	
+}
