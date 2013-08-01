@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Instert your CSS below this line
+   ========================================================================== */
+
+#myTable {
+	width: 500px;
+}
+
+#myTable thead {
+	background-color: #cccccc;
+}
+
+#myTable tfoot {
+	background-color: #cccccc;
+}
