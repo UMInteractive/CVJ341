@@ -2,7 +2,7 @@
 ======
 
 Authors: 
-Lien Tran l.tram@miami.edu
+Lien Tran l.tran@miami.edu
 Kim Grinfeder grinfeder@miami.edu
 
 ======
