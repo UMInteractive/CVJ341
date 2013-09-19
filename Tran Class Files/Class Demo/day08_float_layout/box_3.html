@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Box Model</title>
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+<style>
+#box {
+	width: 400px;
+	height: 400px;
+	background: #ccc;
+	padding: 20px;
+	margin: 20px;
+	border: 5px solid #666;
+	color: #000;
+}
+
+#innerbox_left, #innerbox_right {
+	width: 100px;
+	height: 100px;	
+}
+
+#innerbox_right {
+	float: right;	
+	background: red;
+}
+#innerbox_left {
+	background: blue;
+	float: left;
+}
+</style>
+</head>
+<body>
+<div id="box">
+	<div id="innerbox_left"></div>
+	<div id="innerbox_right"></div>
+<p>This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box.
+This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box.
+This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box.
+
+This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box.
+</p>
+</div>
+
+</body>
+</html>
