@@ -1,0 +1,64 @@
+body {
+	margin:20px;
+}
+
+img {
+	width:			300px;
+	height: 		auto;
+/* 	vertical-align: top; */
+	margin:			5px;
+}
+
+header nav a:link,
+header nav a:visited,
+header nav a:hover,
+header nav a:active {
+	color: white;
+	text-decoration: none;
+}
+
+
+aside ul li a:link,
+aside ul li a:visited,
+aside ul li a:hover,
+aside ul li a:active {
+	color: red;
+	text-decoration: none;
+}
+
+nav ul li {
+	display:		inline;
+	float: 			left;
+	margin:			0 20px;
+}
+
+nav {
+	margin: 0 auto;
+}
+
+header#main {
+	background-color: gray;
+	margin: 20px 0;
+	height: 20px;
+}
+
+aside {
+	clear:both;
+	width:300px;
+	background-color: yellow;
+	float:left;
+	margin-right: 20px;
+}
+
+section {
+	display:block;
+	float: left;
+}
+
+ol#movie_img {
+	list-style-type: none;
+}
+
+ol#movie_img li {
+	float:left;
+}

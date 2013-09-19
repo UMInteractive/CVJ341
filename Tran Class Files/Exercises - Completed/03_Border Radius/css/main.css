@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Instert your CSS below this line
+   ========================================================================== */
+
+/****************************
+For border radius help, you can use CSS generators like: 
+http://border-radius.com/ 
+*****************************/
+
+
+section {
+	-webkit-border-top-right-radius: 50px;
+	-moz-border-radius-topright: 50px;
+	border-top-right-radius: 50px;
+	background-color: green;
+	color: #FFF;
+	padding: 20px;
+	margin: 20px 30px 50px;
+}
+
+#tv {
+	background-color: #000;
+	-webkit-border-bottom-left-radius: 50px;
+	-moz-border-bottom-leftright: 50px;
+	border-bottom-left-radius: 50px;
+}
