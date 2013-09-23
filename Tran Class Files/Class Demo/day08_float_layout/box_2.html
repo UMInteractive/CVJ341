@@ -8,7 +8,7 @@
 #box {
 	width: 400px;
 	height: 400px;
-	background: #ccc;
+	background-color: #ccc;
 	padding: 20px;
 	margin: 20px;
 	border: 5px solid #666;
@@ -22,13 +22,16 @@
 
 #innerbox_right {
 	float: right;	
-	background: red;
+	background-color: red;
+	/* this red box appears on its own line because elements that float only float next to other elements that float */
 }
 #innerbox_left {
-	background: blue;
+	background-color: blue;
+	/* if you want the red box to appear on the same horizontal line as the blue box, you need to add a style declaration here. Hint: it starts with "float" */
 }
 </style>
 </head>
+
 <body>
 <div id="box">
 	<div id="innerbox_left"></div>

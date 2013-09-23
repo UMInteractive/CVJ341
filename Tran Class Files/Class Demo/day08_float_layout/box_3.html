@@ -8,7 +8,7 @@
 #box {
 	width: 400px;
 	height: 400px;
-	background: #ccc;
+	background-color: #ccc;
 	padding: 20px;
 	margin: 20px;
 	border: 5px solid #666;
@@ -22,23 +22,29 @@
 
 #innerbox_right {
 	float: right;	
-	background: red;
+	background-color: red;
 }
 #innerbox_left {
-	background: blue;
+	background-color: blue;
 	float: left;
 }
+
+p {
+/*	width: 300px;
+	clear:both;*/
+}
+
 </style>
 </head>
 <body>
 <div id="box">
 	<div id="innerbox_left"></div>
 	<div id="innerbox_right"></div>
-<p>This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box.
-This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box.
-This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box.
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl augue, pellentesque a massa consequat, semper aliquet nulla. Mauris mattis arcu eget sodales mattis. Sed convallis tempor metus vitae adipiscing. Sed commodo urna turpis, sed accumsan metus scelerisque sit amet. Donec non urna nisi. In gravida ut libero et vulputate. Sed commodo id augue in posuere. Phasellus et molestie erat. Vestibulum nec tincidunt enim, a aliquam lorem. Quisque hendrerit, quam sollicitudin sodales tincidunt, magna neque varius dui, vitae adipiscing augue ante vitae dui. Quisque mattis dui pharetra tortor hendrerit, ut mollis mi sollicitudin. Duis magna sapien, commodo sit amet aliquam sit amet, hendrerit a sem. Suspendisse potenti. Cras id laoreet risus. Curabitur ligula lorem, bibendum sit amet consequat vel, egestas id felis.
 
-This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box. This is text in the box.
+
+<!-- Paragraph text by default has no fixed width and therefore fits in where there is room for each word. But you can always override the default (Hint: Look in the CSS for how you might do this. Hint #2: Uncomment the p tag styles!). -->
+
 </p>
 </div>
 
