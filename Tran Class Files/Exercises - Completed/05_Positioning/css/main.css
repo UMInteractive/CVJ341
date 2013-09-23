@@ -13,17 +13,32 @@ h1 {
 	font-size: 2.3em;
 	font-family: Minion, Georgia, serif;
 	line-height: .8;
-	color: pink;
 /*	margin-bottom: 0;*/
 }
 
-h1#headline {
+h1#title {
 	color: gray;
 	text-align: center; 
 }
 
-h3 {
+#artbasel h1 {
+	color: pink;
+}
+
+#artbasel h3 {
 	color: yellow;
+}
+
+#miamispice {
+	color: black;
+}
+
+#miamispice h1 {
+	color: red;
+}
+
+#miamispice h3 {
+	color: green;
 }
 
 img {
@@ -31,7 +46,7 @@ img {
 }
 
 section {
-/*	position: relative;*/
+	position: relative;
 	width: 100%;
 }
 
@@ -43,8 +58,15 @@ article {
 
 }
 
+#miamispice article {
+	position: absolute;
+	top: 100px;
+	left: 475px;
+	width: 47%;
+}
+
 footer {
-	background-color: green;
+	background-color: #000;
 	text-align: center;
 	padding: 20px 10px;
 	position: fixed;
