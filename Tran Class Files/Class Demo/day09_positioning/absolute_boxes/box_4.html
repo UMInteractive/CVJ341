@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>The Box Model</title>
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+<style>
+#box {
+	width: 400px;
+	height: 400px;
+	background-color: #ccc;
+	padding: 20px;
+	margin: 20px;
+	border: 5px solid #666;
+	color: #000;
+/*	position: relative;*/
+}
+
+#innerbox_left_top, #innerbox_right_top, #innerbox_right_bottom, #innerbox_left_bottom {
+	width: 100px;
+	height: 100px;	
+}
+
+#innerbox_right_top {
+	position: absolute;
+	top: 20px;
+	right: 20px;	
+	background-color: red;
+}
+#innerbox_left_top {
+	background-color: blue;
+	float: left;
+	position: absolute;
+	top: 20px;
+	left: 20px;	
+}
+#innerbox_left_bottom {
+	background-color: green;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	
+}
+#innerbox_right_bottom {
+	background-color: yellow;
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+</style>
+</head>
+<body>
+<div id="box">
+	<div id="innerbox_left_top"></div>
+	<div id="innerbox_right_top"></div>
+	<div id="innerbox_left_bottom"></div>
+	<div id="innerbox_right_bottom"></div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!-- using http://csslayoutgenerator.com/ as a starting point -->
+
+
+
+/*              RESET from Eric Meyer
+--------------------------------------------------------*/ 
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------ END RESET -----------*/
+
+
+body {
+	font: 12px/18px Arial, Tahoma, Verdana, sans-serif;
+	width: 100%;
+}
+
+/*------ put everything inside <div id="wrapper"> - this gives your website a fixed width of 978px -------*/
+#wrapper {
+	width: 978px;
+	margin: 0 auto;
+}
+
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+	height: 150px;
+	background: #FFE680;
+}
+
+
+/* 978.gs column widths for a 12-column layout 
+where each column is 54px and each gutter is 30px
+-----------------------------------------------------------------------------*/
+
+.col1 { width: 54px; }
+.col2 { width: 138px; }
+.col3 { width: 222px; }
+.col4 { width: 306px; }
+.col5 { width: 390px; }
+.col6 { width: 474px; }
+.col7 { width: 558px; }
+.col8 { width: 642px; }
+.col9 { width: 726px; }
+.col10 { width: 810px; }
+.col11 { width: 894px; }
+.col12 { width: 978px; }
+
+.red {background-color: red;}
+.yellow {background-color: yellow;}
+.green {background-color: green;}
+.blue {background-color: blue;}
+.purple {background-color: purple;}
+.brown {background-color: brown;}
+.gray {background-color: gray;}
+.black {background-color: black;}
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+#content {
+}
+
+section {
+	background-color: pink;
+}
+
+
+/* 	if you are floating more than 1 element, then all elements (except if it
+	is the rightmost element in that row) need a margin-right: 30px;
+*/
+
+article {
+	background-color: green;
+	float: left;
+	margin-left: 30px;
+}
+
+.first {
+	margin-left: 0;
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+#footer {
+	height: 100px;
+	background: #BFF08E;
+}
