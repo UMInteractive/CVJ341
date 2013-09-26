@@ -13,7 +13,8 @@
 	margin: 20px;
 	border: 5px solid #666;
 	color: #000;
-	position: relative;
+	position: relative;  
+	/* without this position: relative; style, the colored boxes would be positioned relative to the browser/body. by adding position: relative; here, the colored boxes' absolute position is now relative to #box (the container for the colored boxes) */
 }
 
 #innerbox_left_top, #innerbox_right_top, #innerbox_right_bottom, #innerbox_left_bottom {
@@ -22,52 +23,36 @@
 }
 
 #innerbox_right_top {
-	position: fixed;
-	top: 20px;
-	right: 20px;	
+	float: right;	
 	background-color: red;
 }
 #innerbox_left_top {
 	background-color: blue;
 	float: left;
-	position: fixed;
-	top: 20px;
-	left: 20px;	
 }
 #innerbox_left_bottom {
 	background-color: green;
-	position: fixed;
+	position: absolute;
 	bottom: 20px;
 	left: 20px;
 	
 }
 #innerbox_right_bottom {
 	background-color: yellow;
-	position: fixed;
+	position: absolute;
 	bottom: 20px;
 	right: 20px;
-}
-
-footer {
-	height: 20px;
-	background-color: pink;
-	position: relative;
-	top: 100px;
-	left: 500px;
 }
 
 </style>
 </head>
 <body>
 <div id="box">
-	<!-- <div id="innerbox_left_top"></div>
+	<div id="innerbox_left_top"></div>
 	<div id="innerbox_right_top"></div>
 	<div id="innerbox_left_bottom"></div>
 	<div id="innerbox_right_bottom"></div>
- -->
- 	<p>first</p>
-	<footer>sljfdslkjdksljf</footer>
-	<p>ajdjfkdsfsddfd</p>
+
 </div>
 
 </body>
