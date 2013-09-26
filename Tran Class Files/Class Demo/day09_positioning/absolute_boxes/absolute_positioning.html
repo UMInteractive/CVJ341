@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Positioning - Absolute</title>
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+<style>
+#box {
+	width: 400px;
+	height: 400px;
+	background-color: #ccc;
+	padding: 20px;
+	margin: 20px;
+	border: 5px solid #666;
+	color: #000;
+
+}
+
+
+p {
+	background-color: yellow;
+}
+
+p#offset {
+	background-color: pink;
+	position: absolute;
+	top: 100px;
+	left: 100px;
+
+}
+
+</style>
+</head>
+<body>
+<div id="box">
+	
+ 	<p>This is the first paragraph. All the text on this page is inside a div id=box element.</p>
+	<p id="offset">This second paragraph is position:absolute; with top: 100px; and left: 500px; -- Therefore it is  +100 pixels <strong>from the top of the browser window</strong> and +100 pixels <strong>from the left side of the browser window</strong>strong>. Notice that there is NOT gap between the first and third paragraph - this is because the 2nd paragraph is no longer in the page's normal flow.</p>
+	<p>Here's a third paragraph.</p>
+</div>
+
+</body>
+</html>

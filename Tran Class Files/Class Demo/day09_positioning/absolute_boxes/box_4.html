@@ -13,7 +13,7 @@
 	margin: 20px;
 	border: 5px solid #666;
 	color: #000;
-/*	position: relative;*/
+	position: relative;
 }
 
 #innerbox_left_top, #innerbox_right_top, #innerbox_right_bottom, #innerbox_left_bottom {
@@ -22,7 +22,7 @@
 }
 
 #innerbox_right_top {
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	right: 20px;	
 	background-color: red;
@@ -30,33 +30,44 @@
 #innerbox_left_top {
 	background-color: blue;
 	float: left;
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	left: 20px;	
 }
 #innerbox_left_bottom {
 	background-color: green;
-	position: absolute;
+	position: fixed;
 	bottom: 20px;
 	left: 20px;
 	
 }
 #innerbox_right_bottom {
 	background-color: yellow;
-	position: absolute;
+	position: fixed;
 	bottom: 20px;
 	right: 20px;
+}
+
+footer {
+	height: 20px;
+	background-color: pink;
+	position: relative;
+	top: 100px;
+	left: 500px;
 }
 
 </style>
 </head>
 <body>
 <div id="box">
-	<div id="innerbox_left_top"></div>
+	<!-- <div id="innerbox_left_top"></div>
 	<div id="innerbox_right_top"></div>
 	<div id="innerbox_left_bottom"></div>
 	<div id="innerbox_right_bottom"></div>
-
+ -->
+ 	<p>first</p>
+	<footer>sljfdslkjdksljf</footer>
+	<p>ajdjfkdsfsddfd</p>
 </div>
 
 </body>
