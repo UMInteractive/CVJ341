@@ -62,13 +62,14 @@ body {
 	width: 100%;
 }
 
-/*------ put everything inside <div id="wrapper"> - this gives your website a fixed width of 978px -------*/
+/*------ put everything inside <div id="wrapper"> - this gives your 
+		website a fixed width of 978px + (12 px * 2) padding = 1002px -------*/
 #wrapper {
 	width: 978px;
 	margin: 0 auto;
-
+	padding: 12px;
 	/* if you don't want to see the grid, then comment out the next line */
-	background: url(../978-grid.png) repeat-y; 
+	background: url(../978-grid.png) repeat-y center; 
 	overflow: auto;
 }
 
