@@ -1,0 +1,123 @@
+body#cast {
+	background-color: red;
+}
+
+body#episodes {
+	background-color: yellow;
+}
+
+#wrapper {
+	background-color: white;
+/*	background: url(../978-grid.png) repeat-y center; */
+	overflow: auto;
+}
+
+h1#title {
+	font-family: "Lucida Grande", Georgia, serif;
+	clear:both;
+/*	text-align: center;*/
+	text-transform: uppercase;
+	float: left;
+	margin-left: 54px;
+	font-size: 28px;
+	margin-top: 30px;
+}
+
+nav {
+	font-size: 20px;
+	overflow: auto; /* to make sure the contents appears inside of its colored containing element, the white main#section */
+	margin: 30px 0 65px 30px;
+/*	margin-bottom: 65px;
+	margin-left: 30px;*/
+	float: left;
+}
+
+nav ul li {
+	display: block;
+	float: left;
+	text-align: center;
+	background-color: white;
+	color: red;
+	border-radius: 10px;
+	box-sizing: border-box;
+	padding: 10px 5px;
+	border: 3px solid red;
+	margin-left: 15px;
+
+}
+
+nav ul li.current {
+	box-sizing: border-box;
+	background-color: red;
+	color: white;
+	border: 3px solid red;	
+}
+
+nav ul li a {
+	color: red;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav ul li.current a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+img {
+	float: left;
+	width: 306px;
+	display: block;
+
+}
+
+
+ul#page-menu { 
+	overflow: auto; /* you need this if your containing element has a background color and you want the list to appear inside that colored area */
+	margin-left: 84px;
+	clear:both;
+}
+
+ul#page-menu li {
+	box-sizing: border-box;
+	display: block;
+	float: left;
+	text-align: center;
+	background-color: yellow;
+	border-radius: 20px;
+	margin-left: 30px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+ul#page-menu li:first-child {
+	margin-left: 0;
+}
+
+ul#page-menu li a {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+article {
+	clear: both;
+	padding-top: 30px;
+	margin-left: 84px;
+}
+article section {
+	margin-left: 30px;
+	float: left;
+}
+
+article h1 {
+	font-size: 32px;
+	margin-bottom: 15px;
+}
+
+footer {
+	height: 30px;
+	clear: both;
+	overflow: auto;
+}
