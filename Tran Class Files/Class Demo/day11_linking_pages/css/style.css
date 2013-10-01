@@ -7,8 +7,8 @@ body#episodes {
 }
 
 #wrapper {
-	background-color: white;
-/*	background: url(../978-grid.png) repeat-y center; */
+/*	background-color: white;*/
+	background: url(../978-grid.png) repeat-y center; 
 	overflow: auto;
 }
 
