@@ -1,0 +1,13 @@
+.element {
+		  	height: 50px;
+		  	-webkit-transition: height 2s linear;
+		  	-moz-transition: height 2s linear;
+			transition: height 2s linear;
+		  	background-color: yellow;
+		  	overflow: hidden;
+		  	padding: 10px;
+		}
+
+.element:hover {
+		  height: 150px;
+		}

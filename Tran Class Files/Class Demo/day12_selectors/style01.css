@@ -1,0 +1,25 @@
+img {
+	float: left;
+	width: 20%;
+	padding-right: 2%;
+	display:inline-block;
+}
+
+article {
+	clear: both;
+	padding:5px;
+}
+
+p {
+	width: 75%;
+}
+
+p:first-line {
+	color: purple;
+
+}
+
+article + p {
+	color: green;
+
+}

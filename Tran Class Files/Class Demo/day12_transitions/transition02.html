@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS Transition</title>
+	
+		<style>
+			#cf {
+				  position:relative;
+				  height:281px;
+				  width:450px;
+				  margin:0 auto;
+				}
+
+				#cf img {
+				  position:absolute;
+				  left:0;
+				  -webkit-transition: opacity 1s ease-in-out;
+				  -moz-transition: opacity 1s ease-in-out;
+				  -o-transition: opacity 1s ease-in-out;
+				  transition: opacity 1s ease-in-out;
+				}
+
+				#cf img.top:hover {
+				  opacity:0;
+				}
+		</style>
+
+		<!-- source for this example from http://css3.bradshawenterprises.com/cfimg/ -->
+
+<body>
+
+	
+	<div id="cf">
+	  <img class="bottom" src="mountain.jpg" />
+	  <img class="top" src="clownFish.jpg" />
+	</div>
+
+</body>
+
+</html>
