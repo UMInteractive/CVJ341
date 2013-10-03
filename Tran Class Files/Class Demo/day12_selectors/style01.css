@@ -19,7 +19,9 @@ p:first-line {
 
 }
 
-article + p {
-	color: green;
+section > article  {
+	background-color: green;
+	overflow: auto;
+	margin-bottom: 30px;
 
 }
