@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<title>CSS Transition</title>
+	
+		<style>
+
+			html { 
+				background: url(background.png) no-repeat center center fixed; 
+				-webkit-background-size: cover;
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
+			}
+
+			 div {
+				margin-bottom: 200px;
+				margin: 0 auto;
+			}
+
+			h1 {
+				text-align: center;
+				color: #fff;
+				letter-spacing: 1.1;
+				margin: 80px 0;
+			}
+
+			img {
+				display: block;
+				height:281px;
+				width:450px;
+				margin:0 auto;
+				margin-bottom: 30px;
+			}
+
+			#to-frame img {
+				border: 0px solid rgba(33,33,33,0);
+
+				-webkit-transition: all .3s ease; 
+				-moz-transition: all .3s ease; 
+				-o-transition:  all .3s ease; 
+				transition:all .3s ease;
+
+				box-sizing: border-box; 
+
+			}
+
+			#to-frame img:hover {
+				/*border: 3px solid rgba(241,241,241,.5);*/
+				border: 30px solid rgba(33,33,33,0);
+			}
+
+			#from-frame img {
+				border: 30px solid rgba(222,222,222,.5);
+
+				-webkit-transition: all .3s ease; 
+				-moz-transition: all .3s ease; 
+				-o-transition:  all .3s ease; 
+				transition:all .3s ease;
+
+				box-sizing: border-box; 
+			}
+
+			#from-frame img:hover {
+				border: 0px solid #fff;		
+			}
+
+
+			#box img {
+				-webkit-transition: all .3s ease; 
+				-moz-transition: all .3s ease; 
+				-o-transition:  all .3s ease; 
+				transition:all .3s ease;
+
+				box-sizing: border-box; 
+
+			}
+
+			#box img:hover {
+				-moz-box-shadow: 10px 10px 38px #000000;
+				-webkit-box-shadow: 10px 10px 38px #000000;
+				box-shadow: 10px 10px 38px #000000;
+			}
+
+			div.shadow {
+			    box-shadow: inset 0 0 30px #aaa;
+			    height:200px;
+			    width:450px;
+			    padding:20px;
+			    margin-bottom: 100px;
+			    border:1px solid #CCCCCC;
+			    -webkit-animation: shadowFadeOut .3s;
+			    color: white;
+			    box-sizing: border-box;
+			}
+			div.shadow:hover {
+			    -webkit-animation: shadowFade .3s;
+			    box-shadow: 0 0 30px #aaa;
+			}
+
+			@-webkit-keyframes shadowFade {
+			    0% { box-shadow: inset 0 0 30px #aaa; }
+			    50% { box-shadow: none; }
+			    100% { box-shadow: 0 0 30px #aaa; }
+			}
+
+			@-webkit-keyframes shadowFadeOut {
+			    0% { box-shadow: 0 0 30px #aaa; }
+			    50% { box-shadow: none; }
+			    100% { box-shadow: inset 0 0 30px #aaa; }
+			}
+
+		</style>
+
+		<!-- source for this example from http://css3.bradshawenterprises.com/cfimg/ -->
+
+<body>
+
+	<h1>Adding border on hover (#to-frame)</h1>
+	<div id="to-frame">
+	  <a href="#"><img class="bottom" src="mountain.jpg" alt="mountain" /></a>
+	  <a href="#"><img class="top" src="clownFish.jpg" alt="clown fish" /></a>
+	</div>
+
+	<h1>Removing border on hover(#from-frame)</h1>
+	<div id="from-frame">
+	  <a href="#"><img class="bottom" src="mountain.jpg" alt="mountain" /></a>
+	  <a href="#"><img class="top" src="clownFish.jpg" alt="clown fish" /></a>
+	</div>
+
+
+	<h1>Box Shadow on hover (#box)</h1>
+	<div id="box">
+	  <a href="#"><img class="bottom" src="mountain.jpg" alt="mountain" /></a>
+	  <a href="#"><img class="top" src="clownFish.jpg" alt="clown fish" /></a>
+	</div>
+
+	<h1>Inset to outer shadow on hover (.shadow)</h1>
+	<div class="shadow">
+	  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.</p>
+	</div>
+
+	<div class="shadow">
+	  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum.</p>
+	</div>
+	
+</body>
+
+</html>

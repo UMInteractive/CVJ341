@@ -1,0 +1,155 @@
+/* My CSS */
+
+/* Start style applicable to both pages */
+
+a:link, a:visited {
+	color:#F2EBC7;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color:#979C9C;
+	text-decoration: none;
+}
+
+.clear {
+	clear:both;
+}
+
+#groupshot {
+	padding-top:60px; 
+	padding-bottom:20px;
+}
+
+#banner {
+	position: absolute;
+}
+
+h1, h3 {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Ruthie', cursive;
+	font-size: 5em;
+	position: relative;
+	top:-610px;
+	left:395px;
+	color:#F2EBC7;
+	line-height: 1em;
+	text-shadow: 1px 2px #979C9C;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+.left {
+	float:left;
+}
+
+.floatmargin {
+	margin-left: 30px;
+}
+
+.first {
+	margin-left: 168px;
+}
+
+#squiggle {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:200px;
+    height:auto;
+    position: relative;
+    top:-470px;
+    left:390px;
+}
+li{
+	margin-top: 10px;
+	background-color:#962D3E;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-family: 'Rochester', cursive;
+	font-size: 2.25em;
+	color:#F2EBC7;
+	text-align: center;
+	box-sizing:border-box;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+nav {
+	margin-bottom: 100px;
+}
+
+footer {
+	margin-top:70px;
+	font-size: 1em;
+}
+
+.line {
+	height:1px;
+	width: 978px;
+	background-color:#C8C8C8 ;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+/* End style applicable to both pages */
+
+/* Start style applicable to index page */
+
+.mug {
+	height:138px;
+	width:138px;
+}
+
+.bio {
+	margin-left: 100px;
+	text-align: center;
+}
+
+.biostart {
+	margin-left:40px;
+	text-align: center;
+}
+
+.biomore {
+	margin-left: 120px;
+}
+
+.bandrow {
+	padding-top: 10px;
+}
+/* End style applicable to index page */
+
+/* Start style applicable to music page */
+
+table, tr, td {
+	border:1px #962D3E;
+	padding:7px;
+	border-bottom-style: dotted;
+}
+
+.toprow {
+	background-color: #DACD98;
+	font-weight: bold;
+}
+
+#music, #tour {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#music {
+	margin-left: 309px;
+}
+
+#tour {
+	margin-left: 255px;
+}
+
+/* End style applicable to music page */

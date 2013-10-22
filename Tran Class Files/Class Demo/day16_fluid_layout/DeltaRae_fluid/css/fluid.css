@@ -1,0 +1,192 @@
+/******** fluid version of Delta Rae site ********/
+
+/* Each element's fluid width is its original width divided by its container's width */ 
+
+
+
+a:link, a:visited {
+	color:#F2EBC7;
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	color:#979C9C;
+	text-decoration: none;
+}
+
+.clear {
+	clear:both;
+}
+
+#groupshot {
+	padding-top:	6.134969325153%; 	/* 60/978 */
+	padding-bottom:	2.04498977505120%;	/* 20/978 */
+	width: 100%;
+}
+
+
+h1, h3 {
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Ruthie', cursive;
+	font-size: 5em;
+	position: relative;
+	top:	-6.2372188139059%; 				/* -610 / 978 */
+	left:	4.038854805726%;				/* 395 / 978 */
+	color:#F2EBC7;
+	line-height: 1em;
+	text-shadow: 1px 2px #979C9C;
+	box-sizing: border-box;
+}
+
+h3 {
+	font-size: 2em;
+}
+
+.left {
+	float:left;
+}
+
+.floatmargin {
+	margin-left: 3.067484662577%; 	/* 30 / 978 */
+}
+
+.first {
+	margin-left: 17.177914110429%; 	/* 168 / 978 */
+}
+
+
+li{
+	margin-top: 1.022494887526%;		/* 10/978 */
+	background-color:#962D3E;
+	padding-top: 2.04498977505120%;		/* 20/978 */
+	padding-bottom: 2.04498977505120%;	/* 20/978 */
+	font-family: 'Rochester', cursive;
+	font-size: 2.25em;
+	color:#F2EBC7;
+	text-align: center;
+	box-sizing:border-box;
+	-webkit-border-radius: 7.246376811594%;		/* 10/138 */
+	-moz-border-radius: 7.246376811594%;		/* 10/138 */
+	border-radius: 7.246376811594%;				/* 10/138 */
+
+	/* 
+	you have to do the border radius as a percentage of the element's width;
+	therefore li's border radius is 10/138 -- li width is .col2 = 138 
+	*/
+}
+
+nav {
+	margin-bottom: 10.22494887526%;				/* 100/978 */
+}
+
+footer {
+	margin-top:	7.157464212679%; 				/* 70/978 */
+	font-size: 1em;
+}
+
+.line {
+	height:1px;
+	width: 100%; 								/* 978/978 */
+	background-color:#C8C8C8 ;
+	margin-top: 1.533742331288%;				/* 15/978 */
+	margin-bottom: 1.533742331288%;				/* 15/978 */
+}
+
+/* End style applicable to both pages */
+
+/* Start style applicable to index page */
+
+.mug {
+	width:	14.110429447853%; /* 138 / 978 */
+	/*	height:	138px;*/
+}
+
+.bio {
+	margin-left: 10.22494887526%;				/* 100/978 */
+	text-align: center;
+}
+
+.biostart {
+	margin-left: 4.089979550102%;				/* 40/978 */
+	text-align: center;
+}
+
+.biomore {
+	margin-left: 12.269938650307%; 				/* 120/978 */
+}
+
+.bandrow {
+	padding-top: 1.022494887526%;				/* 10/978 */
+}
+/* End style applicable to index page */
+
+/* Start style applicable to music page */
+
+table, tr, td {
+	border:1px #962D3E;							/* borders can't be % */
+	padding:0.715746421268%;					/* 7/978 */
+	border-bottom-style: dotted;
+	box-sizing: border-box;
+}
+
+.toprow {
+	background-color: #DACD98;
+	font-weight: bold;
+}
+
+#music, #tour {
+	margin-top: 1.533742331288%;				/* 15/978 */
+	margin-bottom: 1.533742331288%;				/* 15/978 */
+}
+
+#music {
+	margin-left: 31.59509202454%; 				/* 309/978 */
+}
+
+#tour {
+	margin-left: 26.073619631902%; 				/* 255/978 */
+}
+
+/* Lien added to ensure bio text aligned correctly */
+
+p.left {
+	width: 	14.110429447853%;
+	margin-left: 0;
+}
+
+p.bio {
+	margin-left: 3.067484662577%;
+}
+
+/* removed AK's CSS and rewrote the following */
+
+#squiggle {
+	display: block;
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+#banner {
+	max-width: 500px;
+	max-height: 500px;
+	position: absolute;
+	top: 0%;
+	left: 40%;
+	width: 20%;
+
+}
+
+div#banner h1 {
+	max-width: 500px;
+	max-height: 500px;
+
+	position: absolute;
+	top: 15%;
+	left: 20%;
+	width: 62%;
+	font-size: 5em;
+	text-align: center;
