@@ -1,0 +1,32 @@
+footer {
+	background-color: grey;
+	width:100%;
+	height:50px;
+	position:fixed;
+	bottom:0px;
+
+	
+}
+
+#jumptop {
+	position:fixed;
+	right:20px;
+	bottom:5px;
+}
+
+img {
+	width:100%;
+	
+}
+
+body{background: white;}
+
+img:hover {
+    filter: url(filters.svg#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE5+ */
+    -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+}
+img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
