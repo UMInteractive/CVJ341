@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<title>swap text</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js">
+	</script>
+
+	<style>
+		div.box {
+			margin: 0 auto;
+			margin-top: 200px;
+			width: 300px; 
+			background-color: yellow; 
+			color: black;
+			text-align: center;
+			padding: 20px;
+			position: relative;
+			box-sizing: border-box;
+		}
+
+		#div1 {
+			position: absolute;
+			margin-top: -100px;
+			width: 300px;
+			padding: 10px 25px;
+			box-sizing: border-box;
+			vertical-align: middle;
+			visibility: hidden;
+			font-size: 40px;
+		}
+
+		#div2 {
+			font-size: 30px;
+			text-align: center;
+			font-weight: bold;
+			text-transform: uppercase;
+
+		}
+
+	</style>
+	
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+
+
+
+</head>
+
+
+<body>
+	
+
+	<div class="box" onMouseOver="swap('div1', 'div2')" onMouseOut="swap('div2','div1')">
+		
+	  <div id="div1">Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</div>
+
+  	  <div id="div2">Mission</div>
+
+	</div>
+
+	<script>
+	  function swap(div_show, div_hide) {
+	    document.getElementById(div_show).style.visibility = "visible";
+	    document.getElementById(div_hide).style.visibility = "hidden";
+
+	  }
+	  function hide(id) {
+	  	alert("hide");
+	    document.getElementById(id).style.visibility = "hidden";
+	  }
+	</script>
+
+</body>
+</html>

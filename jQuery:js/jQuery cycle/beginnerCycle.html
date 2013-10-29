@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JQuery Cycle Plugin - Basic Demo</title>
+<style type="text/css">
+	.pics {  
+	    height:  232px;  
+	    width:   232px;  
+	    padding: 0;  
+	    margin:  0;  
+	    background-color: green;
+	    color: white;
+	} 
+	 
+	.pics img {  
+	    padding: 15px;  
+	    border:  1px solid #ccc;  
+	    background-color: #eee;  
+	    width:  200px; 
+	    height: 150px; 
+	    top:  0; 
+	    left: 0; 
+	} 
+
+	p {
+		background-color: orange;
+		color: green;
+		display:block;
+		min-height: 150px;
+		min-width: 232px;
+		padding: 15px; 
+		top:  0; 
+	    left: 0; 
+	}
+</style>
+
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="jquery.cycle.all.latest.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.pics').cycle({
+		fx: 'blindX', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speed: 1000,
+		timeout: 1000, 
+		pause: 1,
+
+	});
+});
+</script>
+</head>
+<body>
+	<div class="pics">
+		<p>Canes Rule!</p>
+		<h1>University of Miami</h1>
+		<img src="photo1.jpg" width="200" height="150" />
+		<img src="photo2.jpg" width="200" height="150" />
+		<img src="photo3.jpg" width="200" height="150" />
+		
+
+	</div>
+</body>
+</html>

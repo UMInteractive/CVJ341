@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Javascript Gallery</title>
+<link rel="stylesheet" href="style.css" media="screen" type="text/css" />
+
+
+<style>
+#preload { display: none; }
+
+nav ul li {
+	display: block;
+	float: left;
+	width: 100px;
+	text-align: center;
+	background-color: yellow;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 10px 5px;
+}
+
+div#main {
+	margin: 0 auto;
+	width: 960px;
+/*	border: 1px solid black;*/
+}
+
+nav {
+	width: 960px;
+	margin: 10px auto;
+
+}
+
+img {
+	-webkit-animation: spin 0.7s infinite linear;
+-moz-animation: spin 0.7s infinite linear;
+-o-animation: spin 0.7s infinite linear;
+-ms-animation: spin 0.7s infinite linear;
+
+}
+
+
+
+</style>
+
+<div id="preload">
+   <img src="images/pic1.jpg"/>
+   <img src="images/pic2.jpg"/>
+   <img src="images/pic3.jpg"/>
+   <img src="images/pic4.jpg"/>
+   <img src="images/pic5.jpg"/>
+</div>
+<script type="text/javascript">
+	
+	
+	galleryImages = new Array();
+	galleryImages[0] = "pic1.jpg";
+	galleryImages[1] = "pic2.jpg";
+	galleryImages[2] = "pic3.jpg";
+	galleryImages[3] = "pic4.jpg";
+	galleryImages[4] = "pic5.jpg";
+	galleryCaptions = new Array();
+	galleryCaptions[0] = "Project 1";
+	galleryCaptions[1] = "Project 2";
+	galleryCaptions[2] = "<h1>APRIL FOOLS</h1>";
+	galleryCaptions[3] = "Project 4";
+	galleryCaptions[4] = "Project 5";
+	
+	
+	function swapImage(imageNumber) {
+		document.bigPicture.src = "images/" + galleryImages[imageNumber];
+		document.getElementById("caption").innerHTML = galleryCaptions[imageNumber];
+	}
+</script>
+
+</head>
+
+<body>
+	<div id="main">
+	<nav>
+		<ul>
+			<li><a href="#" onmouseover="swapImage(4)">Home</a></li>
+			<li><a href="#" onmouseover="swapImage(1)">About</a></li>
+			<li><a href="#" onmouseover="swapImage(2)">Store</a></li>
+			<li><a href="#" onmouseover="swapImage(3)">Four</a></li>
+			<li><a href="#" onmouseover="swapImage(4)">Five</a></li>
+		</ul>
+	</nav>		
+
+
+	<img name="bigPicture" src="images/pic5.jpg" />
+	<div id="caption">No Caption Yet</div>
+
+	</div>
+
+
+</body>
+</html>
