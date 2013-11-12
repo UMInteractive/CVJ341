@@ -1,0 +1,53 @@
+#wrapper {
+	width: 978px;
+}
+.element {
+  	height: 250px;
+  	width: 250px;
+  	background-color: red;
+  	-webkit-transition: all .2s linear;
+  	-moz-transition: all .2s linear;
+	transition: all .2s linear;
+	border: 0 solid rgb(206, 145, 145);
+/*	box-sizing: border-box;
+*/
+  	overflow: hidden;
+  	padding: 10px;
+  	margin: 0 auto;
+  	position: relative;
+}
+
+.element:hover {
+  	height: 275px;
+	width: 275px;
+	border: 24px solid rgb(206, 145, 145);
+}
+
+#description {
+	width: 200px;
+	text-align: center;
+	margin: 0 auto;
+	visibility: hidden;
+ 	-webkit-transition: all .2s linear;
+  	-moz-transition: all .2s linear;
+	transition: all .2s linear;	
+  	color: white;
+  	vertical-align: middle;
+}
+
+.first {
+	background-color: rgb(206, 145, 145);
+	color: white;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+  	vertical-align: middle;
+  	font-weight: bold;
+  	font-size: 25px;
+}
+
+		
