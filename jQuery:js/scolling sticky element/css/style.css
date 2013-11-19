@@ -1,0 +1,12 @@
+body {
+    height: 3000px;
+    top: 0;
+    position: relative;
+}
+#scroller {
+    position: relative;
+    top: 100px; /* this is how far from top you want this item to appear initially */
+    width: 100%;
+    background: #CCC;
+    height: 100px;
+}

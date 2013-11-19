@@ -1,0 +1,32 @@
+<!DOCTYPE html>  
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Sevika Singh</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+</head>
+
+<body>
+
+    <div id="scroller">This is going to stay at the top once it reaches the top</div>
+
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 100) {
+        $('#scroller').css('top', $(window).scrollTop());
+    } /* where it says "100" - this number should match the initial value for the #scroller's 'top' style as found in the CSS */
+}
+);
+    });
+    </script>
+
+</body>
+
+</html>
