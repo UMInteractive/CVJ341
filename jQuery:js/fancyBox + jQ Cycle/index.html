@@ -1,0 +1,90 @@
+
+<!doctype html>
+<html class="site" dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Fancy Box</title>
+
+<!-- Add jQuery library -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+
+<!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css?v=2.1.4" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.4"></script>
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.5"></script>
+
+<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="js/jquery.cycle.all.latest.js"></script>
+
+<!--http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.pics').cycle({
+		fx: 'fade', // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		speed: 1000,
+		timeout: 4000, 
+		pause: 1,
+
+	});
+});
+</script>
+
+<style type="text/css">
+	.pics {  
+	    height:  400px;  
+	    width:   400px;  
+	    padding: 0;  
+	    margin:  0;  
+	} 
+	 
+	.pics img {  
+	    padding: 15px;  
+	    border:  1px solid #ccc;  
+	    background-color: #eee;  
+	    width:  400px; 
+	    height: 300px; 
+	    top:  0; 
+	    left: 0 
+	} 
+</style>
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
+
+	$(".fancybox").fancybox({
+    helpers : {
+        title: {
+            type: 'outside'
+        }
+    }
+});
+
+
+
+</script>
+
+<div class="pics">
+	<a class="fancybox" title="fried green tomatoes" rel="group" href="photo1.jpg"><img src="photo1.jpg" alt="Pic 1" /></a>
+	<a class="fancybox" title="shrimp and grits" rel="group" href="photo2.jpg"><img src="photo2.jpg" alt="Pic 2" /></a>
+	<a class="fancybox" title="stone crab" rel="group" href="photo3.jpg"><img src="photo3.jpg" alt="Pic 3" /></a>
+</div>
+
+</body>
+</html>

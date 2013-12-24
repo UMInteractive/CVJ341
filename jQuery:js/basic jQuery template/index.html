@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Reveal text</title>
+	
+	<!-- internal style sheet here -->
+	<style type="text/css">
+
+
+	</style>
+
+	<!-- include jQuery library -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+</head>
+<body>
+	
+<!-- putting script at end means it will run after the page loads -->
+
+	<script>
+
+		$(function() {
+			$('section').mouseenter(function(){
+				$(this).find('.label').animate({top:'0px'},{queue:false,duration:500});
+			});
+
+			$('section').mouseleave(function(){
+				$(this).find('.label').animate({top:'400px'},{queue:false,duration:500});
+			});
+		});
+
+
+
+	</script>
+
+</body>
+</html>
