@@ -1,0 +1,37 @@
+				body {
+					border: 3px solid orange;
+					margin: 10px;
+				
+				}
+				
+				section {
+					border: 5px double green;
+					margin: 20px;
+					padding: 10px;
+					width: 500px;
+				}
+				
+				h1, p {
+					border: 1px dashed orangered;
+					padding: 10px;
+				}
+				
+				
+				h1 {
+					margin: .5em 0 .25em;
+					padding-left: 15px;
+					background-color:green;
+					color: white;
+					border: 5px solid orangered;
+				}
+				
+				p {
+					margin: 0;
+					padding-left: 15px;
+				}
+				
+				img {
+					width: 100%;
+					height: auto;
+					padding-top: 20px;
+				}
