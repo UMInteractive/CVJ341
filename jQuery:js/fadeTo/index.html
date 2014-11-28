@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Fade To transparent</title>
+	
+	<!-- internal style sheet here -->
+	<style type="text/css">
+	
+
+	</style>
+
+	<!-- include jQuery library -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+</head>
+<body>
+	
+<section id="food">
+	<img src="food.jpeg" alt="food image"  />
+</section>
+
+<!-- 	putting script at end means it will run after the page loads 
+		5 minutes = 300000 ms
+-->
+
+	<script type="text/javascript">
+
+	// With the element initially shown, we can dim it slowly:
+	$(document).ready(function() {
+	  $( "#food" ).fadeTo( 3000 , 0.0, function() {
+	    // Animation complete.
+	  });
+	});
+
+
+	</script>
+
+</body>
+</html>
